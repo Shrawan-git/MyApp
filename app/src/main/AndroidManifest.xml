@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ArithmeticActivity"></activity>
+        <activity android:name=".MyCalculator"></activity>
+        <activity android:name=".GridActivity" />
+        <activity android:name=".SimpleInterestActivity" />
+        <activity android:name=".ArithmeticActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".DashboardActivity">
             <intent-filter>

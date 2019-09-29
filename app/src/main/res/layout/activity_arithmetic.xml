@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ArithmeticActivity">
+    tools:context=".ArithmeticActivity"
+    android:gravity="center">
 
     <EditText
         android:id="@+id/etArithmeticFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:inputType="number"
         android:hint="Enter First no" />
 
     <EditText
@@ -19,7 +21,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:inputType="number"
         android:hint="Enter Second no" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <RadioButton
         android:id="@+id/rdoSum"
@@ -29,6 +36,8 @@
         android:text="SUM"
         android:textSize="15sp"
         />
+
+
     <RadioButton
         android:id="@+id/rdoSubtract"
         android:layout_width="match_parent"
@@ -37,6 +46,9 @@
         android:text="Subtract"
         android:textSize="15sp"
         />
+</RadioGroup>
+
+
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"

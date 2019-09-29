@@ -1,49 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".DashboardActivity">
+    tools:context=".SimpleInterestActivity">
 
 
-    <Button
-        android:id="@+id/btnSum"
+    <EditText
+        android:id="@+id/et1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="SUM" />
+        android:inputType="number"
+        android:hint="Enter Principle" />
 
-
-    <Button
-        android:id="@+id/btnArithmetic"
+    <EditText
+        android:id="@+id/et2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Arithmetic" />
+        android:inputType="number"
+        android:hint="Enter Time" />
 
-    <Button
-        android:id="@+id/btnSimpleInterest"
+    <EditText
+        android:id="@+id/et3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="SI" />
+        android:inputType="number"
+        android:hint="Enter Rate" />
 
     <Button
-        android:id="@+id/btnGrid"
+        android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Grid" />
-
-    <Button
-        android:id="@+id/btnCalculator"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Calculator" />
+        android:layout_margin="50dp"
+        android:text="Calculate SI" />
 
 </LinearLayout>
