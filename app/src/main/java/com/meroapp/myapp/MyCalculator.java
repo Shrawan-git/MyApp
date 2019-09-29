@@ -94,10 +94,6 @@ public class MyCalculator extends AppCompatActivity implements View.OnClickListe
                 txt.setText(txt.getText() + "9");
                 break;
 
-            case R.id.btnper:
-                txt.setText("");
-                break;
-
             case R.id.btnsum:
                 txtget = "Sum";
                 if (txt.getText().toString() != null && txt.getText().length() > 0) {
@@ -122,6 +118,14 @@ public class MyCalculator extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btndiv:
                 txtget = "Divide";
+                if (txt.getText().toString() != null && txt.getText().length() > 0) {
+                    first = txt.getText().toString();
+                    txt.setText("");
+                }
+                break;
+
+            case R.id.btnper:
+                txtget = "Percentage";
                 if (txt.getText().toString() != null && txt.getText().length() > 0) {
                     first = txt.getText().toString();
                     txt.setText("");
@@ -156,11 +160,15 @@ public class MyCalculator extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case "Divide":
-                output = (Integer.parseInt(first) / Integer.parseInt(second)) + "";
+                    output = (Double.parseDouble(first) / Double.parseDouble(second)) + "";
+                break;
+
+            case "Percentage":
+                output = (Double.parseDouble(first) / 100) + "";
                 break;
 
         }
-        Toast.makeText(this, "The result is"+output, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "The result is " + output, Toast.LENGTH_LONG).show();
     }
 
 }
