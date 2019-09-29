@@ -12,12 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
-        android:inputType="number"
         android:textColor="@android:color/background_dark"
+        android:inputType="numberDecimal"
         android:textSize="60sp">
-
-
     </TextView>
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        ></Button>
+
 
     <GridLayout
         android:layout_width="match_parent"
@@ -185,6 +191,11 @@
             android:text="="
             android:textSize="30sp" />
 
+
     </GridLayout>
+
+
+
 </LinearLayout>
+
 
